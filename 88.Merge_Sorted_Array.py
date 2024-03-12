@@ -6,6 +6,8 @@ The final sorted array should not be returned by the function, but instead be st
 
 
 def merge_array(num1, m, num2, n):
+    if n == 0:
+        return
     del num1[m:]
     num1.extend(num2)
     # print(num1)
